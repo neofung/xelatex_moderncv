@@ -1,0 +1,113 @@
+%# -*- coding:utf-8 -*-
+%% start of file `template_en.tex'.
+%% Copyright 2006-1008 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+\usepackage{fontspec,xunicode}
+\setmainfont{Tahoma}
+\usepackage{xkeyval}
+\usepackage[slantfont,boldfont]{xeCJK}
+\usepackage{xcolor}                 % replace by the encoding you are using
+%\setCJKmainfont{Adobe Song Std L}  % 如果有安装Adobe Song 字体，就用这个吧
+\setCJKmainfont{SimSun}             % 没有安装Adobe Song 字体的就换回SimSun字体吧
+\setCJKfamilyfont{song}{SimSun}
+
+% moderncv themes
+%\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{China}
+\familyname{\TeX}
+\title{网站简历}               % optional, remove the line if not wanted
+%\address{杭州}{中国}    % optional, remove the line if not wanted
+\mobile{123456789}                    % optional, remove the line if not wanted
+\phone{000-238217878}                      % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{ChinaTeXer@gmail.com}                     % optional, remove the line if not wanted
+\extrainfo{www.chinatex.org} % optional, remove the line if not wanted
+\photo[64pt]{picture}                         % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+\quote{China\TeX 您的LaTeX乐园，TeX\&\LaTeX 王国}                 % optional, remove the line if not wante
+
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{基本信息}
+\cvline{网站名称}{\emph{China\TeX}}
+\cvline{建站时间}{2002年}
+\cvline{网站意义}{我们努力打造全新的\TeX\&\LaTeX 交流平台，建设中国独特的\TeX\&\LaTeX 社区，并为TeXer用户服务。欢迎大家光临，并提供指导性意见和建议！}
+\section{站名由来}
+\cventry{2002-2004}{2002年}{薛老师指导网站工作}{网站定名为China\TeX}{谨遵薛老师之建议，本站正式改名为ChinaTeX，欢迎薛定宇教授前来本站指导工作}{备注}
+\section{论坛历史}
+\cvline{title}{\emph{Title}}
+\cvline{supervisors}{Supervisors}
+\cvline{description}{\small Short thesis abstract}
+
+\section{名字来由}
+\subsection{Vocational}
+\cventry{year--year}{Job title}{Employer}{City}{}{Description}                % arguments 3 to 6 are optional
+\cventry{year--year}{Job title}{Employer}{City}{}{Description}                % arguments 3 to 6 are optional
+\subsection{Miscellaneous}
+\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}% arguments 3 to 6 are optional
+
+\section{Languages}
+\cvlanguage{language 1}{Skill level}{Comment}
+\cvlanguage{language 2}{Skill level}{Comment}
+\cvlanguage{language 3}{Skill level}{Comment}
+
+\section{Computer skills}
+\cvcomputer{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+\cvcomputer{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+\cvcomputer{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
+\section{Interests}
+\cvline{篮球}{\small 体力与技巧}
+\cvline{hobby 2}{\small Description}
+\cvline{hobby 3}{\small Description}
+
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+\section{Extra 1}
+\cvlistitem{Item 1}
+\cvlistitem{Item 2}
+\cvlistitem[+]{Item 3}            % optional other symbol
+
+\section{Extra 2}
+\cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
+\cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
+\cvlistdoubleitem[\Neutral]{Item 3}{}
+
+%% Publications from a BibTeX file
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+\begin{thebibliography}{99}
+\bibitem{11} LaTeX入门与提高，高等教育出版社。
+\end{thebibliography}
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
